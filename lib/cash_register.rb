@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 require 'pry'
 
 class CashRegister
@@ -34,4 +35,23 @@ class CashRegister
     self.total -= self.last_ammount
   end
 
+=======
+class CashRegister
+  
+  attr_accessor :total
+  
+  def initialize(val = 0)
+    @total = val
+  end
+  
+  def discount
+    val = 20
+    val
+  end
+  
+  def add_item(title, price, quant = 1)
+    @total += price*quant
+  end
+
+>>>>>>> f983008c627df9e648c267618f3846ac32dcc1ac
 end 
